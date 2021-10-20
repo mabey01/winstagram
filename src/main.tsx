@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 
 import "./index.css";
 
-import { App } from "./App";
+import { Winstagram } from "./Winstagram";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Winstagram />
   </React.StrictMode>,
   document.getElementById("root")
 );
