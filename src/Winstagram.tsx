@@ -5,7 +5,7 @@ export function Winstagram() {
   return (
     <div>
       <header className="bg-white w-full">
-        <div className="container m-auto py-2 flex justify-between items-center">
+        <div className="max-w-5xl m-auto py-4 flex justify-between items-center">
           <div className="flex items-baseline">
             <h1 className="font-mono font-semibold">Winstagram</h1>
             <span className="text-xs text-gray-300 ml-2">by Max</span>
@@ -18,7 +18,7 @@ export function Winstagram() {
         </div>
       </header>
 
-      <section className="container m-auto mt-8">
+      <section className="max-w-5xl m-auto mt-16">
         <ProfileHeader
           profileName="profile name"
           profileImage="https://source.unsplash.com/200x200/?portrait"
@@ -29,8 +29,8 @@ export function Winstagram() {
           pronouns="she/her"
           bio="Photographer"
         />
-        <div className="mt-16">
-          <ul className="flex justify-center space-x-16 uppercase text-gray-500 text-sm cursor-pointer font-semibold">
+        <div className="mt-16 border-t border-gray-300">
+          <ul className="flex justify-center space-x-16 py-4 uppercase text-gray-500 text-sm cursor-pointer font-medium">
             <li className="text-black">Posts</li>
             <li>Reels</li>
             <li>Videos</li>
@@ -38,7 +38,7 @@ export function Winstagram() {
           </ul>
         </div>
 
-        <div className="mt-4">
+        <div>
           <ImageGrid />
         </div>
       </section>
