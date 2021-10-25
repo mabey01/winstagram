@@ -57,7 +57,7 @@ export function ProfileHeader({
           <div className="font-semibold">{name}</div>
           <div className="ml-2 text-gray-400">{pronouns}</div>
         </div>
-        <div className="">{bio}</div>
+        <div>{bio}</div>
       </div>
     </div>
   );
