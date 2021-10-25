@@ -25,6 +25,8 @@ export function TinyImageComponent({ image, size, ...props }: TinyImageProps) {
       <img
         {...props}
         style={{ aspectRatio: "1/1" }}
+        width={image.meta.resolution.width}
+        height={image.meta.resolution.height}
         src={getSrc(image.imageName, size, "jpeg")}
         loading="lazy"
       />

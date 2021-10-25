@@ -67,7 +67,7 @@ export default function Home() {
             {images.map((image) => (
               <TinyImageComponent
                 key={image.imageName}
-                className="w-full"
+                className="w-full bg-gray-400"
                 image={image}
                 size="256sq"
               />
