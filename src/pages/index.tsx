@@ -53,7 +53,7 @@ export default function Home() {
           </div>
           <div className="mt-16 border-t border-gray-300">
             <ul className="flex justify-center space-x-16 py-4 uppercase text-gray-500 text-sm cursor-pointer font-medium">
-              <li className="text-black">Posts</li>
+              <li className="text-black">Post</li>
               <li>Reels</li>
               <li>Videos</li>
               <li>Tagged</li>
