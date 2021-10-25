@@ -12,7 +12,22 @@ export interface TinyImageProps extends Omit<ComponentProps<"img">, "src"> {
 }
 
 export function TinyImageComponent({ image, size, ...props }: TinyImageProps) {
-  const imageSrc = getSrc(image.imageName, size, "jpeg");
-
-  return <img {...props} src={imageSrc} />;
+  return (
+    <picture>
+      <source
+        srcSet={getSrc(image.imageName, size, "avif")}
+        type="image/avif"
+      />
+      <source
+        srcSet={getSrc(image.imageName, size, "webp")}
+        type="image/webp"
+      />
+      <img
+        {...props}
+        style={{ aspectRatio: "1/1" }}
+        src={getSrc(image.imageName, size, "jpeg")}
+        loading="lazy"
+      />
+    </picture>
+  );
 }
