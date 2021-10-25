@@ -34,7 +34,7 @@ export function Winstagram() {
             <header className="flex items-start">
               <div className="w-40 h-40 flex-shrink-0">
                 <img
-                  src="https://source.unsplash.com/200x200/?Geralt"
+                  src="https://source.unsplash.com/160x160/?Geralt"
                   className="rounded-full w-full h-full bg-gray-400"
                 />
               </div>
