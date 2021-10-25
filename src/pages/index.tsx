@@ -1,4 +1,4 @@
-import { ProfileHeader } from "./components/profile-header";
+import { ProfileHeader } from "../components/profile-header";
 
 const profileName = "White Wolf";
 const numberOfPosts = 501;
@@ -8,7 +8,7 @@ const pronouns = "he/him";
 const bio =
   "I carry two swords. One of silver for creatures that roam the wild. One of steel for humans in their cities of stone. They’re both for monsters.";
 
-export function Winstagram() {
+export default function Home() {
   return (
     <div>
       <header className="bg-white w-full">
